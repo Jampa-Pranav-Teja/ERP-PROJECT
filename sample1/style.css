@@ -1,0 +1,138 @@
+body {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease;
+}
+
+:root {
+    --bg-color: #1e1e1e;
+    --calc-bg: #2c2c2c;
+    --display-bg: #fff;
+    --display-text: black;
+    --btn-bg: #333;
+    --btn-hover: #444;
+    --equal-bg: red;
+    --equal-hover: darkred;
+    --clear-bg: #ff9800;
+    --clear-hover: #e68900;
+}
+
+.light-theme {
+    --bg-color: #f5f5f5;
+    --calc-bg: #ffffff;
+    --display-bg: #1e1e1e;
+    --display-text: white;
+    --btn-bg: #ddd;
+    --btn-hover: #ccc;
+    --equal-bg: #4caf50;
+    --equal-hover: #388e3c;
+    --clear-bg: #ff5722;
+    --clear-hover: #e64a19;
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    width: 50px;
+    height: 25px;
+    background: #444;
+    border-radius: 25px;
+    margin: 0 auto 15px auto;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.light-theme .theme-toggle {
+    background: #ccc;
+}
+
+.light-theme .toggle-circle {
+    transform: translateX(25px);
+    background: yellow;
+}
+
+.calculator {
+    background: var(--calc-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    width: 220px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
+
+.display {
+    background: var(--display-bg);
+    color: var(--display-text);
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    background: var(--btn-bg);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s ease;
+}
+
+button:hover {
+    background: var(--btn-hover);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.equal {
+    background: var(--equal-bg);
+}
+
+.equal:hover {
+    background: var(--equal-hover);
+}
+
+/* Clear button styling */
+.clear-btn {
+    background: var(--clear-bg);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.clear-btn:hover {
+    background: var(--clear-hover);
+}
