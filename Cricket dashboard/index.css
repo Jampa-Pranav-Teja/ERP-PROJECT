@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    margin-top: 20px;
+}
+
+h1{
+    margin: auto;
+    margin-top: 7px;
+}
+
+h3{
+    padding-left: 36px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-bottom: 20px+1;
+}
+
+.clear-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#score {
+    background-color: beige;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: beige;
+    border-radius: 10px;
+}
